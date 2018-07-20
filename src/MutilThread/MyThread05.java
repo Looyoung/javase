@@ -16,7 +16,7 @@ public class MyThread05 extends Thread {
         System.out.println("Thread.currentThread().getName()--->" +
                 Thread.currentThread().getName());
         System.out.println("this.getName()--->" + this.getName());
-        System.out.println("run end...");
+        System.out.println("run end....");
     }
 
     public static void main(String[] args) {
