@@ -17,6 +17,6 @@ public class MyThread07 extends Thread{
         MyThread07 myThread07 = new MyThread07();
         System.out.println("begin = "+System.currentTimeMillis());
         myThread07.start();
-        System.out.println("end = "+System.currentTimeMillis());
+        System.out.println("end aa= "+System.currentTimeMillis());
     }
 }
