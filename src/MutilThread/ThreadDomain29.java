@@ -9,6 +9,6 @@ public class ThreadDomain29 {
         System.out.println(Thread.currentThread().getName()
                 + "加了100之后的结果：" +
                 atomicInteger.addAndGet(100));
-        //atomicInteger.addAndGet(1);
+        atomicInteger.addAndGet(1);
     }
 }
