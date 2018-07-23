@@ -13,6 +13,11 @@ public class Reflection implements Serializable, Cloneable {
 
     }
 
+    private Reflection(double aDouble, short aShort) {
+        this.aDouble = aDouble;
+        this.aShort = aShort;
+    }
+
     public Reflection(String string) {
         this.string = string;
     }
