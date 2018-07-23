@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class MyThread05 extends Thread {
 

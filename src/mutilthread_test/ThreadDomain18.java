@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class ThreadDomain18 {
     public void doLongTimeTask() {

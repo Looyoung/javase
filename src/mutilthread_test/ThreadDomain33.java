@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class ThreadDomain33 {
     public void testMethod(Object lock) {

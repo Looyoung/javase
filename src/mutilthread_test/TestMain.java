@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class TestMain {
     public static void main(String[] args) {

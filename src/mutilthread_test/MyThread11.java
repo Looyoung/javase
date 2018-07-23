@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class MyThread11 implements Runnable {
 

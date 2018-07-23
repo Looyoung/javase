@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class ThreadDomain13 {
     private int num = 0;

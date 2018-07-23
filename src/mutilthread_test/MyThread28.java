@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class MyThread28 extends Thread {
     private volatile boolean isRunning = true;

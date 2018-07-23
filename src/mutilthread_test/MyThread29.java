@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class MyThread29 extends Thread {
     private ThreadDomain29 td;

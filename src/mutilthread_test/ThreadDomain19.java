@@ -1,4 +1,4 @@
-package MutilThread;
+package mutilthread_test;
 
 public class ThreadDomain19 {
     public void serviceMethodA(){
