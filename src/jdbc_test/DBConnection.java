@@ -27,10 +27,10 @@ public class DBConnection {
     public static Connection getConnection() {
         Connection con = null;
         try {
-            Class.forName(properties.getProperty("mysqlpackage"));
-            con = DriverManager.getConnection(properties.getProperty("mysqlurl"),
-                    properties.getProperty("mysqlname"),
-                    properties.getProperty("mysqlpassword"));
+            Class.forName(properties.getProperty("mysqlPackage"));
+            con = DriverManager.getConnection(properties.getProperty("mysqlUrl"),
+                    properties.getProperty("mysqlUsername"),
+                    properties.getProperty("mysqlPassword"));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

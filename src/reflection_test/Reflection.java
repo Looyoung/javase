@@ -8,6 +8,7 @@ public class Reflection implements Serializable, Cloneable {
     private double aDouble;
     public boolean aBoolean;
     public short aShort;
+    public static int anInt;
 
     public Reflection() {
 
@@ -22,6 +23,11 @@ public class Reflection implements Serializable, Cloneable {
         this.string = string;
     }
 
+    /**
+     * @param string
+     * @param aDouble
+     * @param aBoolean
+     */
     public Reflection(String string, double aDouble, boolean aBoolean) {
         this.string = string;
         this.aDouble = aDouble;
