@@ -1,4 +1,4 @@
-package jdbc_test;
+package jdbc_test.jdbc_test_1;
 
 import java.io.IOException;
 import java.io.InputStream;
