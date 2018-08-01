@@ -14,8 +14,10 @@ public class InputStreamReaderTest {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("src/io_test/test_1.txt"), true)));
-        String readLine = null;
+        BufferedWriter bufferedWriter =
+                new BufferedWriter(new OutputStreamWriter(
+                        new FileOutputStream(new File("src/io_test/test_1.txt"), true)));
+        String readLine;
         while ((readLine = bufferedReader.readLine()) != null) {
             if ("over".equals(readLine))
                 break;
@@ -29,16 +31,19 @@ public class InputStreamReaderTest {
      *  注意!!!!! 在 Test 模式下, System.in 无法获取控制台输入哦
      */
 //    @Test
-//    public void test1() throws IOException {
-//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("test_1.txt")));
-//        String readLine = null;
-//        while ((readLine = bufferedReader.readLine()) != null) {
-//            if ("over".equals(readLine))
-//                break;
-//            bufferedWriter.write(readLine.toUpperCase());
-//            bufferedWriter.newLine();
-//            bufferedWriter.flush();
+//    public void test1(){
+//        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("test_1.txt")))) {
+//            String readLine = null;
+//            while ((readLine = bufferedReader.readLine()) != null) {
+//                if ("over".equals(readLine))
+//                    break;
+//                bufferedWriter.write(readLine.toUpperCase());
+//                bufferedWriter.newLine();
+//                bufferedWriter.flush();
+//            }
+//        }catch (IOException e){
+//            e.printStackTrace();
 //        }
 //    }
 }
