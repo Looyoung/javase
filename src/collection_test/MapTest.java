@@ -58,6 +58,7 @@ public class MapTest {
             //key:csdg>>>value:ccfafc
             //key:a>>>value:ccc
             //key:agaga>>>value:ccffc
+
         }
     }
 
@@ -85,7 +86,7 @@ public class MapTest {
             //key:Person{name='gdsa', age=15, sex='male'}>>>value:169
             //key:Person{name='oa', age=15, sex='male'}>>>value:174
         }
-        System.out.println("------------split------------");
+        System.out.println("<-<-<-<-<-<-<-<-<-<-<-<-<-<-<->->->->->->->->->->->->->->->");
         // 创建 key 根据字符串长度
         TreeMap<String, String> treeMap1 = new TreeMap<>(new Comparator<String>() {
             @Override
@@ -107,6 +108,18 @@ public class MapTest {
             //key:fcasg>>>value:aga
             //key:zzcasg>>>value:aga
             //key:aaacasg>>>value:aga
+        }
+    }
+
+    @Test
+    public void testFor() {
+        String[] strings = new String[5];
+        for (String str : strings) {
+            str = "Louis";
+            System.out.println(str);
+        }
+        for (int i = 0; i < strings.length; i++) {
+            System.out.print(strings[i] + ","); //null,null,null,null,null,
         }
     }
 }
